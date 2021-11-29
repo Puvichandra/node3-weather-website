@@ -11,7 +11,7 @@ searchForm.addEventListener('submit',(e)=> {
     document.querySelector('#message-1').textContent='Loading...'
     document.querySelector('#message-2').textContent=''
 
-        fetch('http://localhost:3000/weather?address='+encodeURIComponent(location)).then((response) => {
+        fetch('/weather?address='+encodeURIComponent(location)).then((response) => {
             response.json().then((data) => {
 
                
